@@ -1,0 +1,6 @@
+@GoWorksheet.API_HostAddress = http://localhost:5189
+
+GET {{GoWorksheet.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
