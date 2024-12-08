@@ -1,0 +1,81 @@
+GoWorksheet/
+├── GoWorksheet.sln
+│
+├── src/
+│   ├── GoWorksheet.API/
+│   │   ├── Controllers/
+│   │   │   ├── ProblemsController.cs
+│   │   │   └── WorksheetsController.cs
+│   │   │
+│   │   ├── DTOs/
+│   │   │   ├── Requests/
+│   │   │   │   ├── CreateProblemRequest.cs
+│   │   │   │   ├── UpdateProblemRequest.cs
+│   │   │   │   ├── CreateWorksheetRequest.cs
+│   │   │   │   └── UpdateWorksheetRequest.cs
+│   │   │   │
+│   │   │   └── Responses/
+│   │   │       ├── ProblemResponse.cs
+│   │   │       ├── WorksheetResponse.cs
+│   │   │       ├── ProblemTypeResponse.cs
+│   │   │       └── TagResponse.cs
+│   │   │
+│   │   ├── Mappings/
+│   │   │   └── MappingProfile.cs
+│   │   │
+│   │   ├── Middleware/
+│   │   │   └── ErrorHandlingMiddleware.cs
+│   │   │
+│   │   ├── Extensions/
+│   │   │   └── ServiceCollectionExtensions.cs
+│   │   │
+│   │   ├── appsettings.json
+│   │   ├── appsettings.Development.json
+│   │   ├── Program.cs
+│   │   └── GoWorksheet.API.csproj
+│   │
+│   └── GoWorksheet.Infrastructure/
+│       ├── Models/
+│       │   ├── Problem.cs
+│       │   ├── ProblemType.cs
+│       │   ├── DifficultyLevel.cs
+│       │   ├── Worksheet.cs
+│       │   ├── WorksheetProblem.cs
+│       │   ├── Tag.cs
+│       │   └── ProblemTag.cs
+│       │
+│       ├── Data/
+│       │   ├── Configurations/
+│       │   │   ├── ProblemConfiguration.cs
+│       │   │   ├── ProblemTypeConfiguration.cs
+│       │   │   ├── DifficultyLevelConfiguration.cs
+│       │   │   ├── WorksheetConfiguration.cs
+│       │   │   ├── WorksheetProblemConfiguration.cs
+│       │   │   ├── TagConfiguration.cs
+│       │   │   └── ProblemTagConfiguration.cs
+│       │   │
+│       │   ├── Repositories/
+│       │   │   ├── Base/
+│       │   │   │   ├── IRepository.cs
+│       │   │   │   └── Repository.cs
+│       │   │   │
+│       │   │   ├── IProblemRepository.cs
+│       │   │   ├── ProblemRepository.cs
+│       │   │   ├── IWorksheetRepository.cs
+│       │   │   └── WorksheetRepository.cs
+│       │   │
+│       │   └── GoWorksheetContext.cs
+│       │
+│       ├── Services/
+│       │   ├── Interfaces/
+│       │   │   ├── IPdfService.cs
+│       │   │   └── IFileStorageService.cs
+│       │   │
+│       │   ├── PdfService.cs
+│       │   └── FileStorageService.cs
+│       │
+│       └── GoWorksheet.Infrastructure.csproj
+│
+└── tests/  # 如果之後想加入測試
+    ├── GoWorksheet.API.Tests/
+    └── GoWorksheet.Infrastructure.Tests/
